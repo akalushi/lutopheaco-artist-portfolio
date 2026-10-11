@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Lutopheaco | Artist Portfolio &amp; Creative Shop Directory</title>
+  <meta name="description" content="Explore Lutopheaco, an independent creative studio featuring imaginative artwork, stickers, apparel designs, illustrated stories, digital creations, and online shops." />
+
+  <!-- Open Graph placeholders — replace og:image with your real share image -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lutopheaco | Artist Portfolio & Creative Shop Directory" />
+  <meta property="og:description" content="Imaginative artwork, stickers, illustrated stories, and delightful digital creations — all in one cozy creative corner." />
+  <meta property="og:image" content="assets/og-image-placeholder.png" />
+
+  <!-- Favicon placeholder — replace with your real favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ SKIP LINK (accessibility) ============ -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ A. HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#home" class="wordmark" aria-label="Lutopheaco — home">LUTOPHEACO</a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#collections" class="nav-link">Collections</a></li>
+          <li><a href="#stores" class="nav-link">My Stores</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#stores" class="btn btn-primary nav-cta">Explore My Stores</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ B. HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="editorial-label">INDEPENDENT ARTIST • CREATIVE STUDIO</p>
+          <h1 class="hero-title">Art, Imagination &amp; Little Things Made with&nbsp;Love.</h1>
+          <p class="hero-text">
+            Welcome to Lutopheaco — my creative corner of the internet, where
+            imaginative designs, delightful digital creations, and artistic ideas
+            come together.
+          </p>
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn btn-primary">Explore My Artwork</a>
+            <a href="#stores" class="btn btn-outline">Visit My Stores</a>
+          </div>
+        </div>
+
+        <!-- Collage of artistic placeholders — replace with your real artwork -->
+        <div class="hero-collage" aria-hidden="true">
+          <figure class="collage-item c1"><img src="assets/placeholder-stickers.svg" alt="" loading="eager" /></figure>
+          <figure class="collage-item c2"><img src="assets/placeholder-book.svg" alt="" loading="eager" /></figure>
+          <figure class="collage-item c3"><img src="assets/placeholder-apparel.svg" alt="" loading="lazy" /></figure>
+          <figure class="collage-item c4"><img src="assets/placeholder-digital.svg" alt="" loading="lazy" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ C. ABOUT ============ -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="about-media">
+          <!-- Replace with your portrait or artistic avatar -->
+          <img src="assets/placeholder-portrait.svg" alt="Illustrated artist avatar placeholder for Lutopheaco" loading="lazy" />
+        </div>
+        <div class="about-copy">
+          <p class="editorial-label">ABOUT THE ARTIST</p>
+          <h2 class="section-title">A Little About My Creative World</h2>
+          <p>
+            Lutopheaco is where my love for creativity becomes something you can
+            explore, collect, and enjoy. From playful illustrations and charming
+            stickers to digital creations and imaginative stories, every
+            collection reflects my curiosity and love for design.
+          </p>
+          <p class="muted">
+            This corner of the internet is always growing — new artwork, new
+            stories, and new little things made with love.
+          </p>
+          <a href="#collections" class="btn btn-outline">Discover My Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ D. FEATURED PORTFOLIO ============ -->
+    <section class="portfolio section section-tinted" id="portfolio">
+      <div class="container">
+        <p class="editorial-label">PORTFOLIO</p>
+        <h2 class="section-title">A World of Things I've Created</h2>
+
+        <div class="filter-bar" role="group" aria-label="Filter portfolio by category">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="stickers">Stickers</button>
+          <button class="filter-btn" data-filter="apparel">Apparel</button>
+          <button class="filter-btn" data-filter="storybooks">Storybooks</button>
+          <button class="filter-btn" data-filter="digital">Digital Art</button>
+          <button class="filter-btn" data-filter="seasonal">Seasonal</button>
+        </div>
+
+        <!-- Portfolio grid is rendered by script.js from the SITE_DATA.portfolio array -->
+        <div class="portfolio-grid" id="portfolio-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ E. FEATURED COLLECTIONS ============ -->
+    <section class="collections section" id="collections">
+      <div class="container">
+        <p class="editorial-label">COLLECTIONS</p>
+        <h2 class="section-title">Featured Collections</h2>
+
+        <!-- Collection cards rendered by script.js from SITE_DATA.collections -->
+        <div class="collection-grid" id="collection-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ F. MY STORES — MAIN DIRECTORY ============ -->
+    <section class="stores section section-tinted" id="stores">
+      <div class="container">
+        <div class="section-intro">
+          <p class="editorial-label">MY STORES</p>
+          <h2 class="section-title">Find My Art Around the Internet</h2>
+          <p class="section-text">
+            Explore my creative collections and discover something you love in
+            each of my online shops.
+          </p>
+        </div>
+
+        <!-- Store cards rendered by script.js from SITE_DATA.stores -->
+        <div class="store-grid" id="store-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ G. LATEST CREATIONS ============ -->
+    <section class="latest section" id="latest">
+      <div class="container">
+        <p class="editorial-label">LATEST</p>
+        <h2 class="section-title">Fresh from the Studio</h2>
+
+        <div class="latest-grid" id="latest-grid"></div>
+
+        <div class="center">
+          <a href="#portfolio" class="btn btn-outline">See All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ H. SOCIAL MEDIA ============ -->
+    <section class="social section section-dark" id="social">
+      <div class="container social-inner">
+        <p class="editorial-label">FOLLOW ALONG</p>
+        <h2 class="section-title">Let's Stay Connected</h2>
+        <p class="section-text">
+          Follow along for new artwork, creative inspiration, behind-the-scenes
+          moments, and fresh collections.
+        </p>
+        <!-- Social buttons rendered by script.js from SITE_DATA.social -->
+        <div class="social-buttons" id="social-buttons"></div>
+      </div>
+    </section>
+
+    <!-- ============ I. CONTACT ============ -->
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="editorial-label">CONTACT</p>
+          <h2 class="section-title">Have a Creative Idea?</h2>
+          <p>
+            Interested in a collaboration, have a question, or simply want to
+            say hello? I'd love to hear from you.
+          </p>
+          <div class="demo-notice" role="note">
+            <strong>Demo mode:</strong> this form is not yet connected to a mail
+            or form service. To make it live, set <code>CONTACT_FORM.action</code>
+            in <code>script.js</code> (for example a Formspree or Web3Forms
+            endpoint).
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <label for="cf-name">Name <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="cf-name" name="name" required autocomplete="name" />
+            <span class="field-error" data-for="cf-name"></span>
+          </div>
+          <div class="form-row">
+            <label for="cf-email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="cf-email" name="email" required autocomplete="email" />
+            <span class="field-error" data-for="cf-email"></span>
+          </div>
+          <div class="form-row">
+            <label for="cf-subject">Subject <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="cf-subject" name="subject" required />
+            <span class="field-error" data-for="cf-subject"></span>
+          </div>
+          <div class="form-row">
+            <label for="cf-message">Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="cf-message" name="message" rows="6" required></textarea>
+            <span class="field-error" data-for="cf-message"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ J. FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="wordmark footer-wordmark">LUTOPHEACO</p>
+        <p class="footer-tagline">Created with imagination, curiosity, and a little bit of magic.</p>
+      </div>
+      <nav class="footer-col" aria-label="Footer navigation">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Footer store links">
+        <h3>My Stores</h3>
+        <ul id="footer-stores"></ul>
+      </nav>
+      <nav class="footer-col" aria-label="Footer social links">
+        <h3>Follow</h3>
+        <ul id="footer-social"></ul>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="copyright-year"></span> Lutopheaco. All rights reserved.</p>
+      <p class="footer-legal">
+        <a href="#" class="placeholder-link">Privacy Policy</a> ·
+        <a href="#" class="placeholder-link">Terms</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
